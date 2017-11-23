@@ -1,0 +1,4 @@
+aliyun_python_sdk_core==2.6.0
+aliyun_python_sdk_ecs==4.4.1
+aliyun_python_sdk_slb==3.2.1
+Requests==2.18.4
