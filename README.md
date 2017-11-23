@@ -80,7 +80,7 @@
 
 ## Screenshot ##
 
-![screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 Author：咚咚呛 
 
