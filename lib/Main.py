@@ -110,10 +110,10 @@ def main(conf_info):
             logger.infostring('finsh tencent public ip,num: %d' % (len(temp_ip_list)))
 
     out = open(outfile, 'w')
-    out.write("完整域名如下\n")
+    if conf_info['type'] != 'ip': out.write("完整域名如下\n")
     for domain in list(set(temp_domain_list)):
         out.write(domain + "\n")
-    out.write("\n带有正则或者通配符域名如下\n")
+    if conf_info['type'] != 'ip': out.write("\n带有正则或者通配符域名如下\n")
     for domain in list(set(regex_domain_list)):
         out.write(domain + "\n")
     if conf_info['type'] != 'ip': out.write("\nIP信息如下\n")
