@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import datetime
+import datetime, os
 from AliYunDns_doamin import *
 from DNSPod import *
 from Nginx_Server_Name import *
@@ -14,6 +14,11 @@ NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FR
 
 def main(conf_info):
     domain_list, temp_domain_list, regex_domain_list, ip_list = [], [], [], []
+    if not os.path.exists('out'):
+        os.mkdir('out')
+    if not os.path.exists('log'):
+        os.mkdir('log')
+
     outfile = 'out/' + str(datetime.now().strftime('%Y-%m-%d_%H_%M_%S')) + 'info.txt' if not conf_info[
         'output'] else conf_info['output']
     logger = LogInfo('%s' % conf_info['logfile'] if conf_info['logfile'] else 'log/process.log')
