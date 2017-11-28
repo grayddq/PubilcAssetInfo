@@ -109,7 +109,7 @@ def main(conf_info):
             ip_list += temp_ip_list
             logger.infostring('finsh tencent public ip,num: %d' % (len(temp_ip_list)))
 
-    out = open(outfile, 'w', encoding="utf-8")
+    out = open(outfile, 'w')
     out.write(u"完整域名如下\n")
     for domain in list(set(temp_domain_list)):
         out.write(domain + "\n")
