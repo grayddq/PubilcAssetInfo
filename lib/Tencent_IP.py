@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from tencent_src.QcloudApi.qcloudapi import QcloudApi
 import json
-
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
 
 class Tencent_IP:
     def __init__(self, AccessKeyId, AccessKeySecret, Debug=True):

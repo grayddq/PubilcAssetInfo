@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import json, urllib2
-
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
 
 # 获取DNSPOD的域名列表
 # 只要A记录和CNAME 如需要其他的请修改代码['A','CANME']

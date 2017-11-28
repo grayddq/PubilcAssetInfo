@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re, os
-
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
 
 class Nginx_Server_Name:
     def __init__(self, target, filter_domain, Debug=True):

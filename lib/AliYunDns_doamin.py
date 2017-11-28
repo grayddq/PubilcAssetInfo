@@ -2,7 +2,7 @@
 from aliyunsdkcore import client
 from aliyunsdkcore.request import RpcRequest
 import json
-
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
 
 # 获取阿里域名列表
 class AliYunDns_doamin:

@@ -5,7 +5,7 @@ from aliyunsdkecs.request.v20140526 import DescribeRegionsRequest
 from aliyunsdkecs.request.v20140526 import DescribeInstancesRequest
 from aliyunsdkslb.request.v20140515 import DescribeLoadBalancersRequest
 import json
-
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
 
 class AliYun_IP:
     def __init__(self, AccessKeyId, AccessKeySecret, Debug=True):

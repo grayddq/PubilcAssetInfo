@@ -9,6 +9,8 @@ from BaiDu_IP import *
 from Tencent_IP import *
 from Log import *
 
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
+
 
 def main(conf_info):
     domain_list, temp_domain_list, regex_domain_list, ip_list = [], [], [], []
@@ -102,14 +104,14 @@ def main(conf_info):
             ip_list += temp_ip_list
             logger.infostring('finsh tencent public ip,num: %d' % (len(temp_ip_list)))
 
-    out = open(outfile, 'w')
-    out.write("完整域名如下\n")
+    out = open(outfile, 'w', encoding="utf-8")
+    out.write(u"完整域名如下\n")
     for domain in list(set(temp_domain_list)):
         out.write(domain + "\n")
-    out.write("\n带有正则或者通配符域名如下\n")
+    out.write(u"\n带有正则或者通配符域名如下\n")
     for domain in list(set(regex_domain_list)):
         out.write(domain + "\n")
-    out.write("\nIP信息如下\n")
+    out.write(u"\nIP信息如下\n")
     for ip in list(set(ip_list)):
         out.write(ip + "\n")
     out.close()

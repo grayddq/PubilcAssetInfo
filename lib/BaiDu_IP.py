@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib, json, hmac, hashlib, urllib2
 from datetime import datetime
-
+NAME, VERSION, AUTHOR, LICENSE = "Assets Info", "V0.1", "咚咚呛", "Public (FREE)"  # 版本信息
 
 # 百度域名获取
 class BaiDu_IP:
